@@ -1,9 +1,13 @@
 require 'rspec'
-require 'wordcount'
+require 'word_count'
 
 describe 'String#word_count' do
 
   it 'gives the sentence a zero for empty forms' do
+    expect(''.word_count('')).to eq 0
+  end
+
+  it 'gives the sentence a zero for blank entry and one argument' do
     expect(''.word_count('hello')).to eq 0
   end
 
@@ -16,6 +20,6 @@ describe 'String#word_count' do
   end
 
   it 'takes a word that the user inputs, even if capitalized, and tells how many times the word will appear' do
-    expect('HAPPY'.word_count('happy')).to eq 2
+    expect('HAPPY'.word_count('happy')).to eq 1
   end
 end
