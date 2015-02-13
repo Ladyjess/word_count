@@ -14,8 +14,8 @@ get '/form' do
 end
 
 post '/form' do
-  sentence = params[:sentence]
-  word_to_check = params[:word_to_check]
-  results = params.fetch[:sentence].word_count(word_to_check)
+  @sentence = params[:sentence]
+  @word_to_check = params[:word_to_check]
+  @results = params.fetch[:sentence].word_count(word_to_check)
   erb :results
 end

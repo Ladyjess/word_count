@@ -11,3 +11,10 @@ body {
   color: orange;
   background-color: purple;
 }
+
+
+.well {
+  background-color: lightpink;
+  color: purple;
+  font-weight: bold;
+}
