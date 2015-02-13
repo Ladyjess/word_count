@@ -1,15 +1,25 @@
 h1 {
   color: red;
+  font-weight: bold;
 }
 
 body {
   background-color: lightblue;
 }
 
+.jumbotron {
+
+  background-color: purple;
+}
 
 .jumbotron h1 {
   color: orange;
-  background-color: purple;
+  margin: auto;
+}
+
+form {
+
+  color: red;
 }
 
 
@@ -17,4 +27,5 @@ body {
   background-color: lightpink;
   color: purple;
   font-weight: bold;
+  font-size: 50px;
 }
