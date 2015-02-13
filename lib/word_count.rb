@@ -5,9 +5,9 @@ class String
     word_frequency = 0
     sentence = self.downcase.scan(word_to_check)
 
-     sentence.each do |word_check|
+     sentence.each do |word_entry|
 
-       if word_check.eql?("") || word_to_check.eql?("")
+       if word_entry.eql?("") || word_to_check.eql?("")
         word_frequency = 0
 
        elsif sentence.include?(word_to_check)
